@@ -2,6 +2,7 @@ import type { LinksFunction } from "@remix-run/node";
 import {
   Form,
   Links,
+  Outlet,
   Meta,
   Scripts,
   ScrollRestoration,
@@ -51,7 +52,9 @@ export default function App() {
             </ul>
           </nav>
         </div>
-
+        <div id="details">
+          <Outlet />
+        </div>
         <ScrollRestoration />
         <Scripts />
       </body>
